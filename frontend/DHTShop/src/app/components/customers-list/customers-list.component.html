@@ -1,0 +1,22 @@
+<table class="table table-striped">
+  <thead>
+    <th>FullName</th>
+    <th>UserName</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Address</th>
+  </thead>
+  <tbody>
+    
+    <tr *ngFor="let customer of Customers">
+      <div>
+        <h3>{{ customer.fullName }}</h3>
+        <p><strong>Username:</strong> {{ customer.userName }}</p>
+        <p><strong>Email:</strong> {{ customer.email }}</p>
+        <p><strong>Phone:</strong> {{ customer.phone }}</p>
+        <p><strong>Address:</strong> {{ customer.address }}</p>
+      </div>
+      <hr />
+    </tr>
+  </tbody>
+</table>
